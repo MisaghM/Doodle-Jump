@@ -1,0 +1,121 @@
+5
+
+0 -1 1250 23
+180 0 platform
+275 60 platform
+80 120 platform
+130 190 platform
+70 250 platform
+270 375 bplatform
+140 310 platform
+350 440 platform
+360 458 spring
+320 500 mplatform
+240 570 platform
+170 630 platform
+200 700 mplatform
+150 750 platform
+70 810 platform
+335 875 platform
+260 875 platform
+230 940 mplatform
+130 1000 platform
+70 1100 platform
+75 1118 spring
+225 1125 platform
+78 1190 platform
+
+1250 5000 1250 21
+140 0 platform
+200 60 platform
+200 125 platform
+300 190 platform
+70 250 platform
+200 310 platform
+90 375 platform
+300 440 platform
+80 500 platform
+78 560 platform
+210 625 platform
+130 690 mplatform
+180 750 platform
+270 810 platform
+200 875 mplatform
+230 940 platform
+170 1000 enemy
+265 1000 platform
+360 1060 platform
+160 1125 mplatform
+40 1190 mplatform
+
+5000 20000 1250 22
+240 0 platform
+350 60 platform
+240 125 platform
+150 190 platform
+170 250 platform
+280 310 platform
+70 320 bplatform
+245 375 platform
+200 440 platform
+40 500 platform
+150 560 platform
+135 578 spring
+325 625 enemy
+105 690 platform
+147 750 mplatform
+300 845 platform
+60 860 bplatform
+180 935 platform
+225 1000 platform
+295 1060 mplatform
+85 1125 platform
+350 1188 platform
+
+5625 23750 1250 22
+240 0 platform
+360 60 platform
+50 70 bplatform
+160 125 platform
+155 190 platform
+240 250 platform
+190 310 mplatform
+60 375 platform
+120 445 platform
+220 500 platform
+145 565 platform
+305 625 enemy
+170 625 platform
+100 750 mplatform
+65 810 platform
+300 815 enemy
+155 875 platform
+175 960 mplatform
+70 1000 enemy
+240 1060 platform
+300 1125 bplatform
+130 1188 mplatform
+
+1875 6250 1250 22
+125 0 platform
+170 60 platform
+330 125 platform
+175 190 platform
+150 250 platform
+350 310 platform
+95 375 platform
+190 440 platform
+160 500 platform
+340 525 bplatform
+85 563 platform
+245 625 mplatform
+270 690 platform
+282 750 mplatform
+140 800 mplatform
+250 875 platform
+310 940 platform
+165 1000 enemy
+282 1000 platform
+158 1063 mplatform
+115 1125 platform
+200 1188 mplatform
