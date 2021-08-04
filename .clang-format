@@ -1,3 +1,4 @@
+---
 BasedOnStyle: Google
 BreakBeforeBraces: Custom
 BraceWrapping:
@@ -41,3 +42,4 @@ AllowShortFunctionsOnASingleLine: All
 AllowShortIfStatementsOnASingleLine: Always #AllIfsAndElse
 AllowShortLambdasOnASingleLine: Inline
 AllowShortLoopsOnASingleLine: true
+...
