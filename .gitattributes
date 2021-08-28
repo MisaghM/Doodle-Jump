@@ -108,3 +108,8 @@
 *.exe   binary
 *.out   binary
 *.app   binary
+
+## GitHub Linguist ##
+
+# SDL2 Headers
+include/SDL2/* linguist-vendored
