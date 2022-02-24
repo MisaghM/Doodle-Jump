@@ -7,9 +7,9 @@ const char BUTTON_FILE[] = "assets/buttons.png";
 const char DOODLE_FILE[] = "assets/doodle.png";
 
 Tile::Tile() : x(0),
-                       y(0),
-                       w(0),
-                       h(0) {}
+               y(0),
+               w(0),
+               h(0) {}
 Tile::Tile(int x_, int y_, int w_, int h_)
     : x(x_),
       y(y_),
