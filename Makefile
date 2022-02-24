@@ -1,9 +1,9 @@
 PATH_SRC    := src
 PATH_LIB    := lib
 PATH_BUILD  := build
-PATH_BIN    := $(PATH_BUILD)\bin
-PATH_OBJ    := $(PATH_BUILD)\obj
-PATH_DEP    := $(PATH_OBJ)\dep
+PATH_BIN    := $(PATH_BUILD)/bin
+PATH_OBJ    := $(PATH_BUILD)/obj
+PATH_DEP    := $(PATH_OBJ)/dep
 PATH_OUTPUT := output
 
 include common_vars.mk
@@ -24,7 +24,8 @@ VPATH = $(PATH_SRC):\
 		$(PATH_SRC)/enemies:\
 		$(PATH_SRC)/items
 
-FILES = main.cpp RSDL/rsdl.cpp system.cpp input_manager.cpp sequence_manager.cpp spritesheet.cpp utils/calc.cpp game_object.cpp doodle.cpp button.cpp menu_ufo.cpp \
+FILES = main.cpp RSDL/rsdl.cpp system.cpp input_manager.cpp sequence_manager.cpp spritesheet.cpp utils/calc.cpp \
+		game_object.cpp doodle.cpp button.cpp menu_ufo.cpp \
 		scenes/scene.cpp scenes/menu_scene.cpp scenes/game_scene.cpp scenes/pause_scene.cpp scenes/gameover_scene.cpp \
 		platforms/platform_normal.cpp platforms/platform_breakable.cpp platforms/platform_movable.cpp \
 		enemies/enemy_normal.cpp \
@@ -61,13 +62,13 @@ $(PATH_DEP): ; $(MKDIR) $@
 .PHONY: all clean clean-obj clean-dep clean-exe delete-build run help
 
 clean: clean-obj clean-dep clean-exe
-clean-obj: ; $(RM) $(PATH_OBJ)\*.o
-clean-dep: ; $(RM) $(PATH_DEP)\*.d
+clean-obj: ; $(RM) $(PATH_OBJ)/*.o
+clean-dep: ; $(RM) $(PATH_DEP)/*.d
 clean-exe: ; $(RM) $(PATH_BIN)/$(OUT_EXE)
 delete-build: ; $(RMDIR) $(PATH_BUILD)
 
-ARGS ?= 
-run: ; cd $(PATH_OUTPUT) && .\$(OUT_EXE) $(ARGS)
+ARGS ?=
+run: ; cd $(PATH_OUTPUT) && ./$(OUT_EXE) $(ARGS)
 
 help:
 	@echo Targets: all clean clean-obj clean-dep clean-exe delete-build run
