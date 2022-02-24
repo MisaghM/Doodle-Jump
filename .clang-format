@@ -21,11 +21,12 @@ BraceWrapping:
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
 IndentWidth: 4
-#IndentAccessModifiers: false
 AccessModifierOffset: -4
 IndentCaseLabels: false
 NamespaceIndentation: Inner
+IndentPPDirectives: AfterHash
 ColumnLimit: 0
+AlignConsecutiveMacros: Consecutive
 DerivePointerAlignment: false
 PointerAlignment: Left
 BreakConstructorInitializers: BeforeColon
@@ -39,7 +40,7 @@ AllowShortBlocksOnASingleLine: Always
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortEnumsOnASingleLine: true
 AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: Always #AllIfsAndElse
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 AllowShortLambdasOnASingleLine: Inline
 AllowShortLoopsOnASingleLine: true
 ...
