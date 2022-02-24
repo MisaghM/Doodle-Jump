@@ -3,16 +3,16 @@
 void InputManager::keyPressed(char key) {
     switch (key) {
     case consts::RIGHT:
-        keyInputs_  |= 1 << InputKeys::right;
-        keyPresses_ |= 1 << InputKeys::right;
+        keyInputs_  |= InputKeys::right;
+        keyPresses_ |= InputKeys::right;
         break;
     case consts::LEFT:
-        keyInputs_  |= 1 << InputKeys::left;
-        keyPresses_ |= 1 << InputKeys::left;
+        keyInputs_  |= InputKeys::left;
+        keyPresses_ |= InputKeys::left;
         break;
     case consts::PAUSE:
-        keyInputs_  |= 1 << InputKeys::pause;
-        keyPresses_ |= 1 << InputKeys::pause;
+        keyInputs_  |= InputKeys::pause;
+        keyPresses_ |= InputKeys::pause;
         break;
     default: break;
     }
@@ -21,35 +21,35 @@ void InputManager::keyPressed(char key) {
 void InputManager::keyReleased(char key) {
     switch (key) {
     case consts::RIGHT:
-        keyInputs_ &= ~(1 << InputKeys::right);
+        keyInputs_ &= ~InputKeys::right;
         break;
     case consts::LEFT:
-        keyInputs_ &= ~(1 << InputKeys::left);
+        keyInputs_ &= ~InputKeys::left;
         break;
     case consts::PAUSE:
-        keyInputs_ &= ~(1 << InputKeys::pause);
+        keyInputs_ &= ~InputKeys::pause;
         break;
     default: break;
     }
 }
 
-void InputManager::mouseHandle(InputMouse state) {
+void InputManager::mouseHandle(InputMouse::type state) {
     switch (state) {
     case InputMouse::Lclick:
-        mouseInputs_  |= 1 << InputMouse::Lclick;
-        mousePresses_ |= 1 << InputMouse::Lclick;
+        mouseInputs_  |= InputMouse::Lclick;
+        mousePresses_ |= InputMouse::Lclick;
         break;
     case InputMouse::Lrelease:
-        mouseInputs_   &= ~(1 << InputMouse::Lclick);
-        mouseReleases_ |= 1 << InputMouse::Lrelease;
+        mouseInputs_   &= ~InputMouse::Lclick;
+        mouseReleases_ |= InputMouse::Lrelease;
         break;
     case InputMouse::Rclick:
-        mouseInputs_  |= 1 << InputMouse::Rclick;
-        mousePresses_ |= 1 << InputMouse::Rclick;
+        mouseInputs_  |= InputMouse::Rclick;
+        mousePresses_ |= InputMouse::Rclick;
         break;
     case InputMouse::Rrelease:
-        mouseInputs_   &= ~(1 << InputMouse::Rclick);
-        mouseReleases_ |= 1 << InputMouse::Rrelease;
+        mouseInputs_   &= ~InputMouse::Rclick;
+        mouseReleases_ |= InputMouse::Rrelease;
         break;
     default: break;
     }
@@ -65,29 +65,29 @@ void InputManager::reset() {
 void InputManager::setMousePos(Point mousePos) { mousePos_ = mousePos; }
 Point InputManager::getMousePos() const { return mousePos_; }
 
-bool InputManager::isKeyPressed(InputKeys key) const {
+bool InputManager::isKeyPressed(InputKeys::type key) const {
     if (key == InputKeys::any) return (keyInputs_ != 0);
-    return (((1 << key) & keyInputs_) != 0);
+    return (key & keyInputs_) != 0;
 }
 
-bool InputManager::didKeyPress(InputKeys key) const {
+bool InputManager::didKeyPress(InputKeys::type key) const {
     if (key == InputKeys::any) return (keyPresses_ != 0);
-    return (((1 << key) & keyPresses_) != 0);
+    return (key & keyPresses_) != 0;
 }
 
-bool InputManager::didKeyRelease(InputKeys key) const {
+bool InputManager::didKeyRelease(InputKeys::type key) const {
     if (key == InputKeys::any) return (keyReleases_ != 0);
-    return (((1 << key) & keyReleases_) != 0);
+    return (key & keyReleases_) != 0;
 }
 
-bool InputManager::isMousePressed(InputMouse state) const {
-    return (((1 << state) & mouseInputs_) != 0);
+bool InputManager::isMousePressed(InputMouse::type state) const {
+    return (state & mouseInputs_) != 0;
 }
 
-bool InputManager::didMousePress(InputMouse state) const {
-    return (((1 << state) & mousePresses_) != 0);
+bool InputManager::didMousePress(InputMouse::type state) const {
+    return (state & mousePresses_) != 0;
 }
 
-bool InputManager::didMouseRelease(InputMouse state) const {
-    return (((1 << state) & mouseReleases_) != 0);
+bool InputManager::didMouseRelease(InputMouse::type state) const {
+    return (state & mouseReleases_) != 0;
 }

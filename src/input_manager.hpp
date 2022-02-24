@@ -4,19 +4,23 @@
 #include "RSDL/rsdl.hpp"
 #include "consts.hpp"
 
-enum InputKeys {
-    right,
-    left,
-    pause,
-    any
+struct InputKeys {
+    enum type {
+        right = 1 << 0,
+        left = 1 << 1,
+        pause = 1 << 2,
+        any = 1 << 3
+    };
 };
 
-enum InputMouse {
-    Lclick,
-    Rclick,
-    Lrelease,
-    Rrelease,
-    hover
+struct InputMouse {
+    enum type {
+        Lclick = 1 << 0,
+        Rclick = 1 << 1,
+        Lrelease = 1 << 2,
+        Rrelease = 1 << 3,
+        hover = 1 << 4
+    };
 };
 
 class InputManager {
@@ -26,16 +30,16 @@ public:
     void keyPressed(char key);
     void keyReleased(char key);
     void setMousePos(Point mousePos);
-    void mouseHandle(InputMouse state);
+    void mouseHandle(InputMouse::type state);
     void reset();
 
-    bool isKeyPressed(InputKeys key) const;
-    bool didKeyPress(InputKeys key) const;
-    bool didKeyRelease(InputKeys key) const;
+    bool isKeyPressed(InputKeys::type key) const;
+    bool didKeyPress(InputKeys::type key) const;
+    bool didKeyRelease(InputKeys::type key) const;
 
-    bool isMousePressed(InputMouse state) const;
-    bool didMousePress(InputMouse state) const;
-    bool didMouseRelease(InputMouse state) const;
+    bool isMousePressed(InputMouse::type state) const;
+    bool didMousePress(InputMouse::type state) const;
+    bool didMouseRelease(InputMouse::type state) const;
 
     Point getMousePos() const;
 
