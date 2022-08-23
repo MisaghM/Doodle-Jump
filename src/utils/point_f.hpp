@@ -7,4 +7,4 @@ struct PointF {
     float x, y;
 };
 
-#endif //POINT_F_HPP_INCLUDE
+#endif // POINT_F_HPP_INCLUDE

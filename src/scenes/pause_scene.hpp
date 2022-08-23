@@ -11,4 +11,4 @@ public:
     void draw(Window* win) override;
 };
 
-#endif //PAUSE_SCENE_HPP_INCLUDE
+#endif // PAUSE_SCENE_HPP_INCLUDE

@@ -7,4 +7,4 @@ class GameObject;
 bool collided(const Point& mousePos, const GameObject* a);
 bool collided(const GameObject* a, const GameObject* b);
 
-#endif //CALC_HPP_INCLUDE
+#endif // CALC_HPP_INCLUDE

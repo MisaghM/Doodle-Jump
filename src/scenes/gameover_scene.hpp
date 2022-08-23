@@ -21,4 +21,4 @@ private:
     int imgY_ = 720;
 };
 
-#endif //GAMEOVER_SCENE_HPP_INCLUDE
+#endif // GAMEOVER_SCENE_HPP_INCLUDE

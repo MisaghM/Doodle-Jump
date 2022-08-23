@@ -26,11 +26,11 @@ bool GameoverScene::update(Window* win, unsigned deltaTime, System* sys) {
     else {
         imgY_ = 0;
         if (inputMan_->didMouseRelease(InputMouse::Lrelease)) {
-            if (collided(inputMan_->getMousePos(), objs_[0])) { //play-again btn
+            if (collided(inputMan_->getMousePos(), objs_[0])) { // play-again btn
                 sys->changeScene(System::SceneState::game);
                 return true;
             }
-            else if (collided(inputMan_->getMousePos(), objs_[1])) { //menu btn
+            else if (collided(inputMan_->getMousePos(), objs_[1])) { // menu btn
                 sys->changeScene(System::SceneState::menu);
                 return true;
             }
@@ -39,6 +39,7 @@ bool GameoverScene::update(Window* win, unsigned deltaTime, System* sys) {
 
     return true;
 }
+
 void GameoverScene::draw(Window* win) {
     win->draw_img(consts::GAMEOVER_COVER, Rectangle(0, imgY_, win->get_width(), win->get_height()));
     if (imgY_ == 0) {

@@ -52,7 +52,7 @@ bool GameScene::update(Window* win, unsigned deltaTime, System* sys) {
     removeObjectsBelow(win);
 
     if (inputMan_->didMouseRelease(InputMouse::Lrelease)) {
-        if (collided(inputMan_->getMousePos(), objs_[0])) { //pause button
+        if (collided(inputMan_->getMousePos(), objs_[0])) { // pause button
             sys->changeScene(System::SceneState::pause);
             return true;
         }
@@ -115,10 +115,10 @@ void GameScene::draw(Window* win) {
         objs_[i]->draw(win);
     }
     doodle_.draw(win);
-    //HUD
+    // HUD
     win->draw_img(consts::TOPBAR_IMG, Rectangle(0, 0, win->get_width(), 0.09 * win->get_height()));
     win->show_text(std::to_string(height_), Point(16, 0), BLACK, consts::FONT, 28);
-    objs_[0]->draw(win); //pause button
+    objs_[0]->draw(win); // pause button
 }
 
 void GameScene::checkCollisions(Window* win) {

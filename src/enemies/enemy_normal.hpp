@@ -24,4 +24,4 @@ private:
     int hoverTimer_ = 250;
 };
 
-#endif //ENEMY_NORMAL_HPP_INCLUDE
+#endif // ENEMY_NORMAL_HPP_INCLUDE

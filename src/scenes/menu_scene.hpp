@@ -18,4 +18,4 @@ private:
     float doodleV_ = consts::DOODLE_VY;
 };
 
-#endif //MENU_SCENE_HPP_INCLUDE
+#endif // MENU_SCENE_HPP_INCLUDE

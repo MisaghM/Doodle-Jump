@@ -8,4 +8,4 @@ public:
     using GameObject::GameObject;
 };
 
-#endif //PLATFORM_HPP_INCLUDE
+#endif // PLATFORM_HPP_INCLUDE

@@ -17,4 +17,4 @@ struct RectangleF {
     float x, y, w, h;
 };
 
-#endif //RECTANGLE_F_HPP_INCLUDE
+#endif // RECTANGLE_F_HPP_INCLUDE

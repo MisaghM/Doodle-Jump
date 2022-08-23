@@ -24,8 +24,8 @@ void MenuUfo::draw(Window* win, const PointF& offset) const {
 
 void MenuUfo::update(unsigned deltaTime, Window* win) {
     moveTimer_ += deltaTime;
-    //Lissajous Curves
-    box_.x = 25 * sin((moveTimer_) * 0.001f) + initialX_;
+    // Lissajous Curves
+    box_.x = 25 * sin((moveTimer_)*0.001f) + initialX_;
     box_.y = 15 * sin((2 * moveTimer_) * 0.001f) + initialY_;
 }
 

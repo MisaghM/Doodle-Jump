@@ -48,4 +48,4 @@ protected:
     RectangleF hitBox_;
 };
 
-#endif //GAME_OBJECT_HPP_INCLUDE
+#endif // GAME_OBJECT_HPP_INCLUDE

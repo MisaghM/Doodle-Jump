@@ -8,4 +8,4 @@ public:
     using GameObject::GameObject;
 };
 
-#endif //ENEMY_HPP_INCLUDE
+#endif // ENEMY_HPP_INCLUDE

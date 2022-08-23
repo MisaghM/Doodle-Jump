@@ -55,4 +55,4 @@ private:
     int mousePresses_ = 0;
 };
 
-#endif //INPUT_MANAGER_HPP_INCLUDE
+#endif // INPUT_MANAGER_HPP_INCLUDE

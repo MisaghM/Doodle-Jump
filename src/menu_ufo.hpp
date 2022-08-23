@@ -24,4 +24,4 @@ private:
     unsigned moveTimer_ = 0;
 };
 
-#endif //MENU_UFO_HPP_INCLUDE
+#endif // MENU_UFO_HPP_INCLUDE

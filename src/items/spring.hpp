@@ -24,4 +24,4 @@ private:
     sprite::Item currSprite_ = sprite::Item::SPRING;
 };
 
-#endif //SPRING_NORMAL_HPP_INCLUDE
+#endif // SPRING_NORMAL_HPP_INCLUDE

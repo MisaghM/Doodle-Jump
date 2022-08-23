@@ -27,4 +27,4 @@ private:
     sprite::Tile spriteCut_;
 };
 
-#endif //BUTTON_HPP_INCLUDE
+#endif // BUTTON_HPP_INCLUDE

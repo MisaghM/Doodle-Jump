@@ -67,4 +67,4 @@ extern const Tile enemy[3];
 
 } // namespace sprite
 
-#endif //SPRITESHEET_HPP_INCLUDE
+#endif // SPRITESHEET_HPP_INCLUDE

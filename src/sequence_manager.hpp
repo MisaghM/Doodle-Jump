@@ -37,7 +37,7 @@ public:
 private:
     std::vector<Entity> readEntitiesFromFile(std::ifstream& file, int numOfEntities);
 
-    const std::unordered_map<std::string, GameObject::CollisionType> typeMap_ {
+    const std::unordered_map<std::string, GameObject::CollisionType> typeMap_{
         {"platform", GameObject::CollisionType::pNormal},
         {"mplatform", GameObject::CollisionType::pMovable},
         {"bplatform", GameObject::CollisionType::pBreakable},

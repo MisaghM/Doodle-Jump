@@ -24,7 +24,7 @@ void PauseScene::draw(Window* win) {
 
 bool PauseScene::update(Window* win, unsigned deltaTime, System* sys) {
     if (inputMan_->didMouseRelease(InputMouse::Lrelease)) {
-        if (collided(inputMan_->getMousePos(), objs_[0])) { //resume button
+        if (collided(inputMan_->getMousePos(), objs_[0])) { // resume button
             sys->changeScene(System::SceneState::game);
             return true;
         }

@@ -9,8 +9,8 @@
 #include "system.hpp"
 
 void gameLoop(Window* win) {
-    //gameprogrammingpatterns.com/game-loop.html
-    
+    // gameprogrammingpatterns.com/game-loop.html
+
     const int MAX_LAG_UPDATE = 1000;
     System system(win);
 
@@ -18,7 +18,7 @@ void gameLoop(Window* win) {
     unsigned prevTime = currTime;
     unsigned turn = 0;
     unsigned lag = 0;
-    
+
     while (true) {
         system.deltaTime = (turn + 1) > 2 ? 16 : 17;
         lag += currTime - prevTime;
@@ -37,7 +37,7 @@ void gameLoop(Window* win) {
         win->update_screen();
 
         currTime = SDL_GetTicks();
-        //delay time for 60fps: (17/17/16 ms delay) - (time passed for game update)
+        // delay time for 60fps: (17/17/16 ms delay) - (time passed for game update)
         int delayTime = system.deltaTime - (currTime - prevTime);
         if (delayTime < 0) delayTime = 0;
         currTime += delayTime;

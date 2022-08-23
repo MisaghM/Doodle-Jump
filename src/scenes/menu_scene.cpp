@@ -4,8 +4,8 @@
 #include "../button.hpp"
 #include "../game_object.hpp"
 #include "../input_manager.hpp"
-#include "../system.hpp"
 #include "../menu_ufo.hpp"
+#include "../system.hpp"
 #include "../utils/calc.hpp"
 
 MenuScene::MenuScene(InputManager* inputMan)
@@ -39,11 +39,11 @@ bool MenuScene::update(Window* win, unsigned deltaTime, System* sys) {
     }
 
     if (inputMan_->didMouseRelease(InputMouse::Lrelease)) {
-        if (collided(inputMan_->getMousePos(), objs_[0])) { //play button
+        if (collided(inputMan_->getMousePos(), objs_[0])) { // play button
             sys->changeScene(System::SceneState::game);
             return true;
         }
-        else if (collided(inputMan_->getMousePos(), objs_[1])) { //quit button
+        else if (collided(inputMan_->getMousePos(), objs_[1])) { // quit button
             return false;
         }
     }

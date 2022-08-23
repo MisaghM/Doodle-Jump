@@ -43,4 +43,4 @@ private:
     float vx_ = 0;
 };
 
-#endif //DOODLE_HPP_INCLUDE
+#endif // DOODLE_HPP_INCLUDE

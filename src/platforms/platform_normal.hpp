@@ -17,4 +17,4 @@ private:
     static CollisionType collideType_;
 };
 
-#endif //PLATFORM_NORMAL_HPP_INCLUDE
+#endif // PLATFORM_NORMAL_HPP_INCLUDE

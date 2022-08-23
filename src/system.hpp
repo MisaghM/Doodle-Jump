@@ -42,4 +42,4 @@ private:
     GameoverScene* gameoverScene_ = nullptr;
 };
 
-#endif //SYSTEM_HPP_INCLUDE
+#endif // SYSTEM_HPP_INCLUDE

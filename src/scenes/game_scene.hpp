@@ -38,4 +38,4 @@ private:
     int currSeqLastObjHeight_;
 };
 
-#endif //GAME_SCENE_HPP_INCLUDE
+#endif // GAME_SCENE_HPP_INCLUDE

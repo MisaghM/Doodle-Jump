@@ -23,4 +23,4 @@ private:
     float vx_;
 };
 
-#endif //PLATFORM_MOVABLE_HPP_INCLUDE
+#endif // PLATFORM_MOVABLE_HPP_INCLUDE

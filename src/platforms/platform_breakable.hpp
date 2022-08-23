@@ -25,4 +25,4 @@ private:
     sprite::Platform currSprite_ = sprite::Platform::BREAKABLE;
 };
 
-#endif //PLATFORM_BREAKABLE_HPP_INCLUDE
+#endif // PLATFORM_BREAKABLE_HPP_INCLUDE

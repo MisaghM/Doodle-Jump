@@ -21,14 +21,14 @@ Tile::Tile(const Rectangle& xywh)
       w(xywh.w),
       h(xywh.h) {}
 
-const Tile doodle[4] {
+const Tile doodle[4]{
     {0, 0, 58, 57},
     {58, 0, 58, 57},
     {2 * 58, 0, 58, 57},
     {3 * 58, 0, 58, 57},
 };
 
-const Tile button[5] {
+const Tile button[5]{
     {0, 0, 140, 50},
     {140, 0, 140, 50},
     {2 * 140, 0, 140, 50},
@@ -36,7 +36,7 @@ const Tile button[5] {
     {4 * 140, 0, 140, 50},
 };
 
-const Tile platform[6] {
+const Tile platform[6]{
     {0, 0, 73, 21},
     {0, 22, 73, 20},
 
@@ -46,12 +46,12 @@ const Tile platform[6] {
     {2, 186, 72, 41},
 };
 
-const Tile item[2] {
+const Tile item[2]{
     {86, 110, 22, 15},
     {86, 131, 22, 34},
 };
 
-const Tile enemy[3] {
+const Tile enemy[3]{
     {86, 0, 77, 110},
 
     {163, 0, 102, 151},

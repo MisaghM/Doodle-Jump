@@ -21,4 +21,4 @@ protected:
     std::vector<GameObject*> objs_;
 };
 
-#endif //SCENE_HPP_INCLUDE
+#endif // SCENE_HPP_INCLUDE
