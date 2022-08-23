@@ -2,21 +2,8 @@
 BasedOnStyle: Google
 BreakBeforeBraces: Custom
 BraceWrapping:
-  AfterCaseLabel: false
-  AfterClass: false
-  AfterControlStatement: false
-  AfterEnum: false
-  AfterFunction: false
-  AfterNamespace: false
-  AfterObjCDeclaration: false
-  AfterStruct: false
-  AfterUnion: false
-  AfterExternBlock: false
   BeforeCatch: true
   BeforeElse: true
-  BeforeLambdaBody: false
-  BeforeWhile: false
-  IndentBraces: false
   SplitEmptyFunction: false
   SplitEmptyRecord: false
   SplitEmptyNamespace: false
@@ -24,23 +11,11 @@ IndentWidth: 4
 AccessModifierOffset: -4
 IndentCaseLabels: false
 NamespaceIndentation: Inner
-IndentPPDirectives: AfterHash
 ColumnLimit: 0
 AlignConsecutiveMacros: Consecutive
 DerivePointerAlignment: false
-PointerAlignment: Left
-BreakConstructorInitializers: BeforeColon
-Cpp11BracedListStyle: true
-SpaceBeforeCpp11BracedList: true
-SpaceBeforeCtorInitializerColon: true
-SpaceBeforeInheritanceColon: true
 SpacesBeforeTrailingComments: 1
-AllowAllConstructorInitializersOnNextLine: false
 AllowShortBlocksOnASingleLine: Always
 AllowShortCaseLabelsOnASingleLine: true
-AllowShortEnumsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
-AllowShortLambdasOnASingleLine: Inline
-AllowShortLoopsOnASingleLine: true
 ...
