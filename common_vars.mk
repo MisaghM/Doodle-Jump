@@ -3,6 +3,9 @@ CXXFLAGS += -Wall -pedantic
 CC       = $(CXX) $(CXXFLAGS)
 CPPFLAGS += -std=c++11
 
+AR      = ar
+ARFLAGS += rvs
+
 MKDIR  = mkdir -p
 RM     = rm -f
 RMDIR  = rm -rf
